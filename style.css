@@ -1,0 +1,90 @@
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #833AB4;
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+
+}
+
+h1{
+
+    text-align: center;
+    color: #333;
+}
+
+
+#new-task {
+
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 1px aolid #ccc;
+}
+
+
+#add-task {
+
+    background-color: rgb(214, 50, 25);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none; /*toglie i puntini neri della ul*/
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+li button {
+
+    margin-left: 5px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+li button.edit {
+    background-color: rgb(237, 163, 16);
+
+
+
+}
+
+li button.delete {
+
+    background-color: rgb(234, 18, 18);
+    color: white;
+}
+
+li span.done {
+    text-decoration: line-through; /*barrato*/
+    color: #888;
+}
+
+li button.toggle{
+
+    background-color: blue;
+    color: white;
+}

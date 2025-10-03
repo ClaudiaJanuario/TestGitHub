@@ -1,0 +1,17 @@
+{
+  "todos": [
+    {
+      "id": "41d1",
+      "title": "Chiamare la scuola",
+      "completed": false
+    },
+    {
+      "id": "df9e",
+      "title": "Prenotare visita"
+    },
+    {
+      "id": "75a9",
+      "title": "Pagare Luce"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+Per generare una chiave SSH di verifica tra client git personale 
+e github ecco i comandi da fare una tantum
+
+1. avviare powershell da amministratore
+
+2. lanciare il comando : 
+
+ssh-keygen -t ed25519 -C "la_tua_email_github@dominio.com"
+
+enter + enter e nao inserir password
+
+
+3. 
+
+Lanciare comando :
+
+Set-Service -Name ssh-agent -StartupType Automatic
+(serve per far partire all avvio del pc)
+
+Lanciare il comando:
+
+Start-Service ssh-agent  (avvia al agente)
+
+
+
+4. Lanciare il comando:
+
+ssh-add ~/.ssh/id_ed25519    (copia la chiave al agente)
+
+
+5. Lanciare il comando:
+
+cat ~/.ssh/id_ed25519.pub   (apri il file e mostra chiave pubblica)
+
+
+
+6. Copiare chiave pubblica con anche la la_tua_email_github
+
+7. Andare in setting di github, SSH e GPG keys -> add keys ( dare un nome alla chiave e clica add key)
